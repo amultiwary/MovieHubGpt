@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MovieHubGpt/static/css/main.c57bd2bd.css",
+    "main.js": "/MovieHubGpt/static/js/main.9de8204e.js",
+    "static/js/453.67699da7.chunk.js": "/MovieHubGpt/static/js/453.67699da7.chunk.js",
+    "index.html": "/MovieHubGpt/index.html",
+    "main.c57bd2bd.css.map": "/MovieHubGpt/static/css/main.c57bd2bd.css.map",
+    "main.9de8204e.js.map": "/MovieHubGpt/static/js/main.9de8204e.js.map",
+    "453.67699da7.chunk.js.map": "/MovieHubGpt/static/js/453.67699da7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c57bd2bd.css",
+    "static/js/main.9de8204e.js"
+  ]
+}
