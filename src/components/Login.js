@@ -11,11 +11,14 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 import { BG_URL, USER_AVATAR } from "../utils/constant"; // import user avatar from constant file
+import { useNavigate } from "react-router-dom"; // import useNavigate from react-router-dom
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState("");
   const dispatch = useDispatch(); // dispatch function to update the redux store
+  const navigate = useNavigate(); // useNavigate to navigate to different routes
+  const [successMessage, setSuccessMessage] = useState(""); // state to store success message
 
   const name = useRef(null); // useRef to get the value of name input field
   const email = useRef(null); // useRef to get the value of email input field
@@ -50,7 +53,9 @@ const Login = () => {
                   displayName,
                   photoURL,
                 })
-              );
+              )
+              setSuccessMessage("Signup successful! Please login.");
+              navigate("/login");
             })
             .catch((error) => {
               // An error occurred

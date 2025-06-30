@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice"; // import user slice actions
-import { LOGO, SUPPORTED_LANGUAGES } from "../utils/constant";
+import { SUPPORTED_LANGUAGES } from "../utils/constant";
 import { toggleGptSearchView } from "../utils/GptSlice";
 import { changeLangugae } from "../utils/configSlice"; // import config slice actions
 
@@ -60,7 +60,7 @@ const Header = () => {
 
   return (
     <div className="w-screen absolute px-8 py-2 bg-gradient-to-b from-black  z-10 flex flex-col md:flex-row justify-between items-center">
-      <img className="w-40 mx-auto md:mx-0" src={LOGO} alt=" logo" />
+      <img className="w-40 mx-auto md:mx-0"  alt=" logo" />
       {user && (
         <div className="flex p-2 justify-between">
           {showGptSearch && (
@@ -84,7 +84,7 @@ const Header = () => {
           {/* <img width={40} height={40} className="hidden md:block" alt="usericon" src={user?.photoURL} /> */}
 
           <button onClick={handleSignOut} className="font-bold text-white bg-red-600 px-4 my-2 rounded-lg hover:bg-red-700 transition duration-300">
-            signOut
+            LogOut
           </button>
         </div>
       )}
